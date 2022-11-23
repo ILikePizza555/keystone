@@ -1,6 +1,6 @@
 @0xec8fa8410eef13db;
 
-interface HttpsClient {
+interface HttpClient {
 	domain @0 (domain :List(Text)) -> (domain :Domain);
 }
 
@@ -16,10 +16,10 @@ interface Path {
 }
 
 struct QueryParameter {
-	key @0 Text;
-	value @1 Text;
+	key @0 :Text;
+	value @1 :Text;
 }
 
 struct Response {
-	status @0 Int16;
+	status @0 :Int16;
 }
