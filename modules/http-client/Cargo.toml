@@ -6,3 +6,11 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+capnp = "0.14.9"
+capnp-rpc = "0.14"
+capnp-futures = "0.14"
+hyper = { version = "0.14", features = ["full"] }
+
+[build-dependencies]
+anyhow = "1.*"
+capnp_import = { git = "https://github.com/Fundament-Software/capnp_import" }
